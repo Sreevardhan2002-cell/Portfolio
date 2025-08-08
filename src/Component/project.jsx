@@ -6,6 +6,9 @@ function Project(){
         <div className="Project-Section">
             <div className="Project-banner">
                 <h4 className="Heading">Project...</h4>
+                <div className="">
+
+                </div>
             </div>
         </div>
     )
