@@ -7,9 +7,7 @@ function About(){
         <div className="About">
             <div className="About-head">
             <h3 className="About-begin"><b>HI,l'm Sreevardhan L M 👋</b></h3>
-            <p className="About-sentence">"i'm a JavaScript developer who enjoys creating web applications that are both functional and user-friendly. I love turning ideas into real projects and always look for ways to improve my skills through hands-on experience.
-
-Currently, I'm focused on frontend development and exploring tools like HTML, CSS, JavaScript, and React. My goal is to build apps that solve real problems and make a positive impact."</p>
+            <p className="About-sentence">"I’m a JavaScript developer focused on building responsive, user-friendly web applications. Skilled in React, Tailwind CSS, and Node.js, I create full-stack solutions with clean interfaces and scalable backends. My goal is to deliver apps that solve real problems and offer a seamless user experience."</p>
             </div>
             <div className="About-profile">
                 <img className="Profile-photo"  src={ profile } alt="profile" />
