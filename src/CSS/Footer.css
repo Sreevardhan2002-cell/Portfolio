@@ -1,0 +1,48 @@
+
+.Footer {
+    background-color: #282c34;
+    color: white;
+    padding: 0;
+    text-align: center;
+}
+.Footer-Icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 2rem 0rem;
+}
+
+.Footer-Icons a {
+    margin: 0 10px;
+}
+
+.Footer-Icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.Footer-Text{
+    max-width: 100%;
+    margin-top: 2rem;
+    background: slategray;
+    height: 2rem;
+}
+.Footer-Insta{
+    /* linear-gradient(142deg,rgba(131, 58, 180, 1) 0%, rgba(201, 106, 212, 1) 16%, rgba(252, 176, 69, 1) 61%, rgba(253, 29, 29, 1) 100%) */
+    border-radius: 14px;
+    transition: transform 0.3s ease-in-out;
+}
+.Footer-Insta:hover{
+    background: linear-gradient(142deg, rgba(131, 58, 180, 1) 0%, rgba(201, 106, 212, 1) 16%, rgba(252, 176, 69, 1) 61%, rgba(253, 29, 29, 1) 100%);
+    color: white;;
+    transform: background-color 0.3s ease-in-out;
+}
+
+.Footer-GitHub{
+    border-radius: 12px;
+
+}
+.Footer-Mail{
+    border-radius: 12px;
+}
