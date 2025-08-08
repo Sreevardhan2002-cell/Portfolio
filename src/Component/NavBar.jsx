@@ -10,6 +10,7 @@ function NaveBar(){
             <li className="navbar-links">
                 <a href="#home" className="navbar-link">Home</a>
                 <a href="#about" className="navbar-link">About</a>
+                <a href="#skill" className="navbar-link">Skill</a>
                 <a href="#priject" className="navbar-link">Project</a>
                 <a href="#contect" className="navbar-link">contact</a>
             </li>

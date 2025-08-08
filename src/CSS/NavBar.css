@@ -5,6 +5,7 @@
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background: #000000;
+    z-index: 0;
 }
 
 .navbar-head{
@@ -35,6 +36,7 @@
 @media (max-width: 788px){
     .navbar{
         padding: 1rem;
+        z-index: 1;
     }
     .navbar-head{
         font-size: 1.2rem;
