@@ -12,11 +12,11 @@ function NaveBar(){
                 Sreevardhan
             </div>
             <li className="navbar-links">
-                <a href={About} className="navbar-link">Home</a>
-                <a href={AboutContent} className="navbar-link">About</a>
-                <a href={Skill} className="navbar-link">Skill</a>
-                <a href={Project} className="navbar-link">Project</a>
-                <a href={Footer} className="navbar-link">contact</a>
+                <a href={About} className="navbar-link nav-btn">Home</a>
+                <a href={AboutContent} className="navbar-link nav-btn">About</a>
+                <a href={Skill} className="navbar-link nav-btn">Skill</a>
+                <a href={Project} className="navbar-link nav-btn">Project</a>
+                <a href={Footer} className="navbar-link nav-btn">contact</a>
             </li>
         </nav>
     )
