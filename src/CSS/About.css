@@ -13,7 +13,7 @@
     background: linear-gradient(165deg, rgba(255, 18, 231, 1) 0%, rgba(247, 227, 47, 1) 48%);
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    padding: 2rem 11rem;
+    padding: 2rem 9rem;
     font-size: clamp(2rem,3vw,3rem);
     margin: initial;    
 }
