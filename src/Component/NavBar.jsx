@@ -11,7 +11,13 @@ function NaveBar(){
             <div className="navbar-head">
                 Sreevardhan
             </div>
+                <div className="toggle">
+                <div className="nav-top_line common"></div>
+                <div className="nav-middle_line common"></div>
+                <div className="nav-bottom_line common"></div>
+                </div>
             <li className="navbar-links">
+
                 <a href={About} className="navbar-link nav-btn">Home</a>
                 <a href={AboutContent} className="navbar-link nav-btn">About</a>
                 <a href={Skill} className="navbar-link nav-btn">Skill</a>

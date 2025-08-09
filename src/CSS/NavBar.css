@@ -29,6 +29,15 @@
     border-radius: 4px;
     transition: background-color 0.2s;
 }
+.nav-top_line,
+.nav-middle_line,
+.nav-bottom_line{
+    display: none;
+}
+
+.toggle{
+    display: none;
+}
 
 .navbar-link:hover{
     background-color:  rgba(255, 255, 255, 0.1);
@@ -52,4 +61,53 @@
 }
 .nav-btn{
     cursor: pointer;
+}
+@media(max-width:500px){
+    .toggle{
+        display: block;
+        position:absolute;
+        height: 30px;
+        width: 30px;
+        top: 20px;
+        right: 15px;
+        z-index: 1;
+        cursor: pointer;
+        border-radius: 2px;
+        background-color: gray;
+        box-shadow: 0 0 10px(0,0,0,0.3);
+    }
+    .navbar-link{
+        display: none;
+    }
+    .toggle .common{
+        position: absolute;
+        height: 2px;
+        width:20px;
+        background-color: floralwhite;
+        border-radius: 20px;
+        transition: 0.3 ease;
+    }
+    .toggle .nav-top_line,
+    .toggle .nav-middle_line,
+    .toggle .nav-bottom_line{
+        display: block;
+    }
+
+    .toggle .nav-top_line{
+        top:30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+    }
+    .toggle .nav-middle_line{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .toggle .nav-bottom_line{
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
