@@ -694,4 +694,21 @@
         height: 100%;
         width: 100%;
     }
+
+    @media(max-width: 500px){
+        .About-profile{
+        clip-path: ellipse(23% 37% at 49% 40%);
+        width: 22rem;
+        padding: 15px;
+        }
+        .Profile-photo{
+        width: 13rem;
+        }
+        .About-begin{
+            padding: 2rem 6rem;
+        }
+        .About-sentence{
+            padding: 0px 2rem;
+        }
+    }
 }
