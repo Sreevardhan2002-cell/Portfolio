@@ -91,12 +91,15 @@
 
     }
     .Project-Button{
-        top:15%
+        top:50%
     }
     .Project-Slide{
         height: 10rem;
     }
     .Project-banner{
         height:19rem
+    }
+    .Project-Slider{
+        height: 9rem;
     }
 }
