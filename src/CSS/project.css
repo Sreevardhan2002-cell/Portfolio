@@ -83,3 +83,20 @@
     transform: translateX(-50%);
     display: flex;
 }
+
+@media(max-width: 500px){
+    .Project-Slide > img{
+        object-fit:scale-down;
+        width: 100%;
+
+    }
+    .Project-Button{
+        top:15%
+    }
+    .Project-Slide{
+        height: 10rem;
+    }
+    .Project-banner{
+        height:19rem
+    }
+}
