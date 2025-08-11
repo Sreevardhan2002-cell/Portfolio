@@ -22,6 +22,10 @@
     gap: 2rem;
 }
 
+.nav-dropdown{
+    display: none;
+}
+
 .navbar-link{
     font-size: 1rem;
     background-color: #000000;
@@ -78,6 +82,7 @@
     }
     .navbar-link{
         display: none;
+        /* flex-basis: 10.33%; */
     }
     .toggle .common{
         position: absolute;
@@ -92,6 +97,7 @@
     .toggle .nav-bottom_line{
         display: block;
     }
+
 
     .toggle .nav-top_line{
         top:30%;
@@ -109,5 +115,24 @@
         top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    .navbar-links, .nav-dropdown{
+    position: absolute;
+    width: 13rem;
+    height: 300px;
+    right: 0px;
+    top: 58px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transition: all 1s ease;
+    background: black;
+    z-index: 1;
+    column-count: 5;
+    column-gap: 20px;
+    }
+    .nav-link:hover{
+        background-color: gray;
+        transition: background 0.5s;
     }
 }
