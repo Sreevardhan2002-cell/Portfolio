@@ -695,20 +695,21 @@
         width: 100%;
     }
 
-    @media(max-width: 500px){
-        .About-profile{
-        clip-path: ellipse(24% 36% at 49% 44%);
-        width: 22rem;
-        padding: 15px;
-        }
-        .Profile-photo{
-        width: 13rem;
-        }
-        .About-begin{
-            padding: 2rem 1rem;
-        }
-        .About-sentence{
-            padding: 0px 2rem;
-        }
-    }
 }
+        
+        @media(max-width: 500px){
+            .About-profile{
+                clip-path: ellipse(23% 37% at 49% 40%);
+                width: 22rem;
+                padding: 15px;
+            }
+            .Profile-photo{
+                width: 13rem;
+            }
+            .About-begin{
+                padding: 2rem 1rem;
+            }
+            .About-sentence{
+                padding: 0px 2rem;
+            }
+        }
