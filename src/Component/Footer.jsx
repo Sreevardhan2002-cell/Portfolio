@@ -7,10 +7,10 @@ function Footer(){
     return(
         <div id='Footer' className="Footer">
             <div className="Footer-Icons">
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/titan_king_0/" target="_blank" rel="noopener noreferrer">
                     <img className='Footer-Insta' src={Insta} alt="Instagram" />
                 </a>
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/Sreevardhan2002-cell" target="_blank" rel="noopener noreferrer">
                     <img className='Footer-GitHub' src={Github} alt="Github" />
                 </a>
                 <a href="mailto:lmsreevardhan@gmail.com">
