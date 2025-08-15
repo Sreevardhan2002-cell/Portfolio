@@ -693,7 +693,7 @@
         padding: 0px;
     }
     .About-profile{
-        clip-path: ellipse(19% 33% at 49% 39%);
+        clip-path: ellipse(14% 36% at 50% 39%);
     }
     .About-begin{
         margin-top: 20px;
@@ -707,9 +707,9 @@
         
         @media(max-width: 500px){
             .About-profile{
-                clip-path: ellipse(23% 37% at 49% 40%);
+                clip-path: ellipse(23% 36% at 50% 47%);
                 width: 22rem;
-                padding: 15px;
+                padding: 26px;
             }
             .Profile-photo{
                 width: 13rem;
