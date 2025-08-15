@@ -6,8 +6,16 @@
     padding: 0rem 4rem;
     height:100%;
     flex-wrap: wrap;
-    margin-top: 6rem;
+    margin-top: 9rem ;  
+    /* updated */
 }
+/* .About,
+#about,
+#skills,
+#projecdt,
+#contact{
+    scroll-margin-top: 70px;
+} */
 
 .About-begin{
     background: linear-gradient(165deg, rgba(255, 18, 231, 1) 0%, rgba(247, 227, 47, 1) 48%);
