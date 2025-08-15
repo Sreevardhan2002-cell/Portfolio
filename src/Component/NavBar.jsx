@@ -43,19 +43,19 @@ function NaveBar(){
             <ul className={`navbar-links nav-dropdown${open ? " open" : ""}`}>
 
                 <li>
-                    <Link to="/" className="navbar-link nav_drop-link nav-btn">Home</Link>
+                    <a href='#Home' to="/" className="navbar-link nav_drop-link nav-btn">Home</a>
                 </li>
                 <li>
-                    <Link to="/about" className="navbar-link nav_drop-link nav-btn">About</Link>
+                    <a href='#About' to="/about" className="navbar-link nav_drop-link nav-btn">About</a>
                 </li>
                 <li>
-                    <Link to="/skill" className="navbar-link nav_drop-link nav-btn">Skill</Link>
+                    <a href="#Skill" to="/skill" className="navbar-link nav_drop-link nav-btn">Skill</a>
                 </li>
                 <li>
-                    <Link to="/project" className="navbar-link nav_drop-link nav-btn">Project</Link>
+                    <a href="#Project" to="/project" className="navbar-link nav_drop-link nav-btn">Project</a>
                 </li>
                 <li>
-                    <Link to="/contact" className="navbar-link nav_drop-link nav-btn">contact</Link>
+                    <a href="#Footer" to="/contact" className="navbar-link nav_drop-link nav-btn">contact</a>
                 </li>
             </ul>
         </nav>

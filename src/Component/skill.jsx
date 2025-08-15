@@ -3,7 +3,7 @@ import "../CSS/AboutContent.css"
 
 function Skill(){
     return(
-        <div className="Skill-Section">
+        <div id="Skill" className="Skill-Section">
             <div className="Skill-banner">
                 <h4 className="Heading">Skill...</h4>
                 <div className="Skill-Display">

@@ -3,7 +3,7 @@ import '../CSS/AboutContent.css'
 
 function AboutContent(){
     return (
-        <div className="About-Section">
+        <div id='About' className="About-Section">
             <div className='About-title'>
                 <div className='About-text'>
                 <h4 className='Heading'><b>About...</b></h4>

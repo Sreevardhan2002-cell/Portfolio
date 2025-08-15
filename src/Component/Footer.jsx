@@ -5,7 +5,7 @@ import "../CSS/Footer.css"
 
 function Footer(){
     return(
-        <div className="Footer">
+        <div id='Footer' className="Footer">
             <div className="Footer-Icons">
                 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                     <img className='Footer-Insta' src={Insta} alt="Instagram" />

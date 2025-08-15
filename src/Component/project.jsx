@@ -19,7 +19,7 @@ function Project(){
     };
 
     return (
-        <div className="Project-Section">
+        <div id="Project" className="Project-Section">
             <div className="Project-banner">
                 <h4 className="Heading">Project...</h4>
                 <div className="Project-Slider">
