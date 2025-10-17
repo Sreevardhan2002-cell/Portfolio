@@ -52,8 +52,8 @@
     border-radius: 5%;
 }
 
-.Project-Button{
-    position: absolute;
+/* .Project-Button{ */
+    /* position: absolute;
     top: 50%;
     z-index: 9;
     border: none;
@@ -64,13 +64,13 @@
     height: 3.5rem;
     width: 4.5rem;
     font-size: 1.25rem;
-    cursor: pointer;
-}
+    cursor: pointer; */
+/* } */
 
-.Project-lbtn{
+/* .Project-lbtn{
     left: 1%;
     transform: translate(-13%, -50%);
-}
+} */
 .triangle-Right{
     width: 0;
   height: 0;
@@ -105,7 +105,7 @@
     top: 50%;
     cursor: pointer;
     transform: translate(-13%, -50%);
-    
+
 }
 .triangle-Left:hover{
     border-right: 60px solid rgb(60, 60, 60);
@@ -125,19 +125,60 @@
 }
 
 @media(max-width: 500px){
-    .Project-Slide > img{
-        object-fit:scale-down;
-        width: 100%;
+    .Project-Slider{
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type:x mandatory;
+        height: auto;
+        touch-action: pan-x;
+        gap: 0;
+    }
+    .Project-Slide{
+        position: relative;
+        flex: 0 0 100%;
+        min-width: 100%;
+        height: auto;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        scroll-snap-align:center;
+        box-sizing: border-box;
+        padding: 0.5rem 0;
+
 
     }
-    .Project-Button{
+
+    .Project-Slide > img{
+        object-fit:inherit;
+        width: 100%;
+        height: auto;
+        max-height: 60vh;
+        display: block;
+        margin: 0 auto;
+        border-radius: 6px;
+
+    }
+    
+    /* .Project-Button{
+        top:50%
+    } */
+    /* .triangle-Left{
         top:50%
     }
+    .triangle-Right{
+        top:50%
+    } */
+     .triangle-Left, .triangle-Right{
+        display: none;
+    }
+
     .Project-Slide{
         height: 10rem;
     }
     .Project-banner{
-        height:19rem
+        height:19rem;
+        padding: 1rem;
     }
     .Project-Slider{
         height: 9rem;
