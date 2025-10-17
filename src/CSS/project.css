@@ -71,6 +71,46 @@
     left: 1%;
     transform: translate(-13%, -50%);
 }
+.triangle-Right{
+    width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 60px solid #837c7c;
+  border-right: 0;
+    position: absolute;
+    right: 1%;
+    z-index: 9; 
+    top: 50%;
+    cursor: pointer;
+    transform: translate(13%, -50%);
+
+}
+.triangle-Right:hover{
+    border-left: 60px solid rgb(60, 60, 60);
+    transition: border-left 0.3s;
+}
+.triangle-Left{
+    width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 60px solid #837c7c;
+  border-left: 0;
+    position: absolute;
+    left: 1%;
+    z-index: 9; 
+    top: 50%;
+    cursor: pointer;
+    transform: translate(-13%, -50%);
+    
+}
+.triangle-Left:hover{
+    border-right: 60px solid rgb(60, 60, 60);
+    transition: border-right 0.3s;
+}
 
 .Project-rbtn{
     right: 0%;

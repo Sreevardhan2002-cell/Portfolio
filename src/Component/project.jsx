@@ -36,8 +36,10 @@ function Project(){
                         </div>
                     ))}
     
-                    <button className="Project-Button Project-lbtn" onClick={prevSlide }>&larr;</button>
-                    <button className="Project-Button Project-rbtn" onClick={nextSlide}>&rarr;</button>
+                    {/* <button className="Project-Button Project-lbtn" onClick={prevSlide }>&larr;</button> */}
+                    <div className="triangle-Left" onClick={prevSlide}></div>
+                    <div className="triangle-Right" onClick={nextSlide}></div>
+                    {/* <button className="Project-Button Project-rbtn" onClick={nextSlide}>&rarr;</button> */}
                     <div className="Project-Dots"></div>
                 </div>
             </div>
