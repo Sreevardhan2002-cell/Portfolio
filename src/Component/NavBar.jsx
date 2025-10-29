@@ -59,6 +59,7 @@ function NaveBar(){
                 </li>
             </ul>
         </nav>
+
     )
 }
 
