@@ -11,8 +11,19 @@ function NaveBar(){
 
     const [open,setopen]=React.useState(false);
 
-    const handleToggle = () => {
-        setopen(!open);
+    const handleToggle = () => setopen(open => !open);
+
+        React.useEffect(() => {
+        const onResize = () => {
+            if (window.innerWidth > 768) setopen(false);
+        };
+        window.addEventListener("resize", onResize);
+        return () => window.removeEventListener("resize", onResize);
+    }, []);
+        const closeAndScroll = (e, id) => {
+        setopen(false);
+        }
+
         // Handle toggle functionality here
     
         // const slide= style.width('500px')
@@ -28,39 +39,41 @@ function NaveBar(){
         //         link.style.cursor = dropdown.style.display === 'flex' ? 'pointer' : 'default'
         //     })
 
-    }
+    
 
     return(
-        <nav className="navbar">
+        <nav className="navbar" role="navigation" aria-label="Main Navigation">
             <div className="navbar-head">
                 Sreevardhan
             </div>
-                <div className="toggle" onClick={handleToggle}>
-                <div className="nav-top_line common"></div>
-                <div className="nav-middle_line common"></div>
-                <div className="nav-bottom_line common"></div>
-                </div>
-            <ul className={`navbar-links nav-dropdown${open ? " open" : ""}`}>
+                <button className={`toggle ${open ? "is-open" : ""}`} aria-controls="primary-navigation" aria-expanded={open} onClick={handleToggle} aria-label={open ? "Close menu" : "Open menu"}>
+                <span className="nav-top_line common" />
+                <span className="nav-middle_line common" />
+                <span className="nav-bottom_line common" />
+                </button>
+            <ul id="primary-navigation" className={`navbar-links nav-dropdown${open ? " open" : ""}`}>
 
                 <li>
-                    <a href='#Home' to="/" className="navbar-link nav_drop-link nav-btn">Home</a>
+                    {/* <a href='#Home' to="/" className="navbar-link nav_drop-link nav-btn">Home</a> */}
+                    <a href="#Home" className="navbar-link" onClick={(e) => closeAndScroll(e, "Home")}>Home</a>
                 </li>
                 <li>
-                    <a href='#About' to="/about" className="navbar-link nav_drop-link nav-btn">About</a>
+                    <a href="#About" className="navbar-link" onClick={(e) => closeAndScroll(e, "About")}>About</a>
+
                 </li>
                 <li>
-                    <a href="#Skill" to="/skill" className="navbar-link nav_drop-link nav-btn">Skill</a>
+                    <a href="#Skill" className="navbar-link" onClick={(e) => closeAndScroll(e, "Skill")}>Skill</a>
                 </li>
                 <li>
-                    <a href="#Project" to="/project" className="navbar-link nav_drop-link nav-btn">Project</a>
+                    <a href="#Project" className="navbar-link" onClick={(e) => closeAndScroll(e, "Project")}>Project</a>
                 </li>
                 <li>
-                    <a href="#Footer" to="/contact" className="navbar-link nav_drop-link nav-btn">contact</a>
+                    <a href="#Footer" className="navbar-link" onClick={(e) => closeAndScroll(e, "Footer")}>contact</a>
                 </li>
             </ul>
         </nav>
 
-    )
+    );
 }
 
 
