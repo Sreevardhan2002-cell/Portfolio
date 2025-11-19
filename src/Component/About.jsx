@@ -1,5 +1,6 @@
 import "../CSS/About.css"
-import profile from"../img/Sreevardhan.jpg"
+import profile from "../img/sreevardhan-org1.jpeg" 
+
 
 
 function About(){
